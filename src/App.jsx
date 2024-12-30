@@ -1,8 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <>
+      <div className="bg-nav-hero">
+        <Navbar />
+      </div>
+    </>
+  );
 };
 
 export default App;

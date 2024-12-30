@@ -66,6 +66,9 @@ export default {
           white: '#f5f7fa',
         },
       },
+      backgroundImage: {
+        'nav-hero': "url('./src/assets/images/nav-hero-bg.png')",
+      },
     },
   },
   plugins: [],

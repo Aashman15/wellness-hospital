@@ -13,7 +13,7 @@ const MyNavLink = ({ item }) => {
   return (
     <li className="flex flex-col items-center" key={item.label}>
       <NavLink
-        className="font-regular flex items-center gap-x-2 text-sm text-gray-light"
+        className="font-regular flex items-center gap-x-2 text-lg text-gray-light"
         to={item.href}
       >
         <span>{item.label} </span>

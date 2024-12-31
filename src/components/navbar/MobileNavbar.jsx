@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import hamburgerUrl from '../../assets/icons/hamburger.svg';
+import closeUrl from '../../assets/icons/close.svg';
 import wellnessLogoUrl from '../../assets/images/wellness-logo.png';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext.jsx';
 
 const MobileNavbar = () => {
+  const { isMenuOpen, toggleIsMenuOpen } = useContext(AppContext);
+
   return (
-    <nav className="flex justify-between wrapper pt-[1.875rem] pb-[4.375rem] md:hidden">
+    <nav className="wrapper flex justify-between pb-[4.375rem] pt-[1.875rem] md:hidden">
       <Link to="/">
         <img
           src={wellnessLogoUrl}
@@ -14,14 +18,24 @@ const MobileNavbar = () => {
           alt="wellness logo"
         />
       </Link>
-      <Link to="/">
-        <img
-          className="w-12 h-12"
-          src={hamburgerUrl}
-          width="48"
-          height="48"
-          alt="Hamburger"
-        />
+      <Link onClick={toggleIsMenuOpen}>
+        {isMenuOpen ? (
+          <img
+            className="h-12 w-12"
+            src={closeUrl}
+            width="48"
+            height="48"
+            alt="close"
+          />
+        ) : (
+          <img
+            className="h-12 w-12"
+            src={hamburgerUrl}
+            width="48"
+            height="48"
+            alt="Hamburger"
+          />
+        )}
       </Link>
     </nav>
   );

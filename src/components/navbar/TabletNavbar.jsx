@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import hamburgerUrl from '../../assets/icons/hamburger.svg';
+import closeUrl from '../../assets/icons/close.svg';
 import wellnessLogoUrl from '../../assets/images/wellness-logo.png';
 import searchIconUrl from '../../assets/icons/search.svg';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext.jsx';
 
 const TabletNavbar = () => {
+  const { isMenuOpen, toggleIsMenuOpen } = useContext(AppContext);
   return (
-    <nav className="hidden md:flex justify-between items-center xl:hidden wrapper pt-[3.75rem] pb-[4.375rem]">
-      <Link to="/">
-        <img src={hamburgerUrl} width="48" height="48" alt="Hamburger" />
+    <nav className="wrapper hidden items-center justify-between pb-[4.375rem] pt-[3.75rem] md:flex xl:hidden">
+      <Link onClick={toggleIsMenuOpen}>
+        {isMenuOpen ? (
+          <img src={closeUrl} width="48" height="48" alt="Close" />
+        ) : (
+          <img src={hamburgerUrl} width="48" height="48" alt="Hamburger" />
+        )}
       </Link>
       <Link to="/">
         <img

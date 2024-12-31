@@ -2,22 +2,13 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontSize: {
-      xs: '14px',
-      sm: '18px',
-      base: '16px',
-      lg: '20px',
-      xl: '24px',
-      '2xl': '28px',
-      '3xl': '30px',
-      '4xl': '32px',
-      '5xl': '36px',
-      '6xl': '40px',
-      '7xl': '48px',
-      '8xl': '64px',
-      '9xl': '72px',
-    },
     extend: {
+      fontSize: {
+        '28px': '28px',
+        '32px': '32px',
+        '40px': '40px',
+        '64px': '64px',
+      },
       fontFamily: {
         heebo: ['Heebo', 'sans-serif'],
         ibm: ['"IBM Plex Sans"', 'sans-serif'],

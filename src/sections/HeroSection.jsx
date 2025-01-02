@@ -1,6 +1,9 @@
 import React from 'react';
-import Menu from '../components/Menu';
+
 import NoRadiusOnRightBottomCorner from '../components/NoRadiusOnRightBottomCorner';
+import { Button } from '../components/Button';
+import arrowDown from '../assets/icons/arrow-down.svg';
+import { GoArrowRight } from 'react-icons/go';
 
 const HeroSection = () => {
   return (
@@ -13,6 +16,24 @@ const HeroSection = () => {
         Wellness Hospital will always serve you wholeheartedly. Health is a
         priority.
       </p>
+      <Button>Primary</Button>
+      <Button size="sm">Primary Small</Button>
+      <Button size="lg">Primary Large</Button>
+      <Button variant="transparent">Transparent</Button>
+      <Button variant="transparent" size="sm">
+        Transparent small
+      </Button>
+      <Button variant="transparent" size="lg">
+        Transparent large
+      </Button>
+      <Button variant="red">Red</Button>
+      <Button variant="red" size="sm">
+        Red small
+      </Button>
+      <Button iconURL={arrowDown} variant="red" size="lg">
+        Red Large
+      </Button>
+      <Button variant="ice">Ice</Button>
     </section>
   );
 };

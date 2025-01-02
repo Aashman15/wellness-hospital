@@ -1,4 +1,5 @@
 import { cva } from 'class-variance-authority';
+import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const buttonVariants = cva(
@@ -7,27 +8,29 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: 'bg-primary text-gray-light hover:bg-primary/90',
-        transparent: 'bg-transparent text-gray-light hover:bg-primary',
-        red: 'bg-red text-white border-primary hover:bg-red/90',
+        transparent:
+          'bg-transparent border-primary border-2 text-primary hover:bg-primary',
+        red: 'bg-red border-primary border-2  text-white border-primary hover:bg-red/90',
+        ice: 'bg-ice-light text-blue-dark hover:bg-ice-light/90 ',
       },
       size: {
-        default: 'py-12  px-30',
-        sm: 'py-8 px-16 rounded-xl',
-        lg: 'py-18 w-64 text-xl',
+        default: 'py-3  px-7',
+        sm: 'py-2 px-4 rounded-xl',
+        lg: 'py-5 px-8 text-xl',
       },
     },
     defaultVariants: { variant: 'primary', size: 'default' },
   },
 );
 
-const Button = ({ text, className, variant, size, ...props }, ref) => {
+const Button = forwardRef(({ className, variant, size, ...props }, ref) => {
   return (
     <button
       className={twMerge(buttonVariants({ variant, size, className }))}
       ref={ref}
       {...props}
-    >
-      {text}
-    </button>
+    />
   );
-};
+});
+
+export { Button, buttonVariants };

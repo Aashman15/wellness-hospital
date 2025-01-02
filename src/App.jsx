@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import Navbar from './components/navbar/Navbar';
-import HeroSection from './sections/HeroSection';
 import Sections from './sections/Sections';
 import { AppContext } from './context/AppContext';
 import Menu from './components/Menu';
+import HeroSection from './sections/hero/HeroSection';
 
 const App = () => {
   const { isMenuOpen } = useContext(AppContext);

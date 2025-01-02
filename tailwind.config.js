@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      spacing: {
+        22: '88px',
+      },
       fontSize: {
         '28px': '28px',
         '32px': '32px',
@@ -37,7 +40,7 @@ export default {
         },
         green: {
           DEFAULT: '#2ecc70',
-          light: '#5ee087',
+          light: '#5ee088',
           pale: '#defce0',
         },
         red: {

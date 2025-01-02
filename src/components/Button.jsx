@@ -14,9 +14,9 @@ const buttonVariants = cva(
         ice: 'bg-ice-light text-blue-dark hover:bg-ice-light/90 ',
       },
       size: {
-        default: 'py-3  px-7',
-        sm: 'py-2 px-4 rounded-xl',
-        lg: 'py-5 px-8 text-xl',
+        default: 'h-12  px-7',
+        sm: 'h-10 px-4 rounded-xl',
+        lg: 'h-16 px-8 text-xl',
       },
     },
     defaultVariants: { variant: 'primary', size: 'default' },

@@ -8,7 +8,7 @@ import { BiTime } from 'react-icons/bi';
 
 const HeroInfo = () => {
   return (
-    <section className="wrapper h-screen text-center">
+    <>
       <NoRadiusOnRightBottomCorner text={'Your Health is Our Priority'} />
       <h1 className="mb-7 mt-9 font-ibm text-4xl font-bold text-gray-light">
         More Than Medicine It’s Personal
@@ -34,7 +34,7 @@ const HeroInfo = () => {
         </Button>
       </div>
       <div className="flex flex-col gap-y-5">
-        <div className="h-22 w-22 mx-auto flex items-center justify-center rounded-2xl bg-green-light text-white">
+        <div className="mx-auto flex h-22 w-22 items-center justify-center rounded-2xl bg-green-light text-white">
           <BiTime size={45} />
         </div>
         <div className="text-white">
@@ -47,7 +47,7 @@ const HeroInfo = () => {
           </p>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ export default {
     extend: {
       spacing: {
         22: '88px',
+        12.5: '50px',
       },
       fontSize: {
         '28px': '28px',
@@ -28,6 +29,8 @@ export default {
           dark: '#303030',
           darker: '#424242',
           neutral: '#969696',
+          divider: '#EEEEEE',
+          formcontrol: '#5B5B5B',
         },
         blue: {
           DEFAULT: '#3399db',

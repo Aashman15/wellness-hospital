@@ -1,14 +1,14 @@
 import React from 'react';
 
 import HeroInfo from './HeroInfo';
-import HeroFormAndImage from './HeroFormAndImage';
+import HeroImageAndForm from './HeroImageAndForm';
 
 const HeroSection = () => {
   return (
-    <>
+    <section className="wrapper text-center">
       <HeroInfo />
-      <HeroFormAndImage />
-    </>
+      <HeroImageAndForm />
+    </section>
   );
 };
 

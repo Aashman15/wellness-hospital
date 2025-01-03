@@ -17,4 +17,10 @@
     max-width: min(93%, 75rem);
     margin-inline: auto;
   }
+
+  @media (min-width: 48em) {
+    .wrapper {
+      max-width: min(85%, 75rem);
+    }
+  }
 }

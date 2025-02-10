@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import Navbar from './components/navbar/Navbar';
-import Sections from './sections/Sections';
-import { AppContext } from './context/AppContext';
 import Menu from './components/Menu';
+import Navbar from './components/navbar/Navbar';
+import { AppContext } from './context/AppContext';
 import HeroSection from './sections/hero/HeroSection';
+import OtherSections from './sections/other-sections/OtherSections';
 
 const App = () => {
   const { isMenuOpen } = useContext(AppContext);
@@ -14,7 +14,7 @@ const App = () => {
         <Navbar />
         {isMenuOpen ? <Menu /> : <HeroSection />}
       </div>
-      {!isMenuOpen && <Sections />}
+      {!isMenuOpen && <OtherSections />}
     </>
   );
 };

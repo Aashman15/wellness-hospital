@@ -4,6 +4,7 @@ import Companies from './Companies';
 import Statistics from './Statistics';
 import OurServices from './OurServices';
 import Doctors from './Doctors';
+import Immediate from './Immediate';
 
 const OtherSections = () => {
   return (
@@ -13,6 +14,7 @@ const OtherSections = () => {
       <Statistics />
       <OurServices />
       <Doctors />
+      <Immediate />
     </>
   );
 };

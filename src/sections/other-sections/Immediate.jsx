@@ -23,7 +23,7 @@ const Immediate = () => {
       </div>
       <div className="-mt-28 w-full px-12 md:px-20 xl:mt-0 xl:px-0">
         <img
-          className="h-full w-full rounded-3xl rounded-l-none xl:rounded-br-3xl xl:rounded-tr-3xl"
+          className="h-full w-full rounded-3xl xl:rounded-l-none xl:rounded-br-3xl xl:rounded-tr-3xl"
           src={doctorExperimenting}
           alt="doctor experimenting"
         />

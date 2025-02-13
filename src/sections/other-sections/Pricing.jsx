@@ -26,21 +26,14 @@ const pricings = [
     price: '$50.6',
   },
 ];
+const Feature = ({ feature }) => (
+  <li className="flex items-start gap-3">
+    <img className="mt-1" src={tick} height={24} width={24} alt="green tick" />
+    <span className="text-2xl text-[#5B5B5B]">{feature}</span>
+  </li>
+);
 
 const PricingCard = ({ title, isRecommended, paragraph, price }) => {
-  const Feature = ({ feature }) => (
-    <li className="flex items-start gap-3">
-      <img
-        className="mt-1"
-        src={tick}
-        height={24}
-        width={24}
-        alt="green tick"
-      />
-      <span className="text-2xl text-[#5B5B5B]">{feature}</span>
-    </li>
-  );
-
   return (
     <div className="rounded-3xl border-2 border-gray-100 p-7">
       <h2 className="mb-5 font-ibm text-3xl font-bold">
@@ -105,3 +98,5 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
+export { Feature };

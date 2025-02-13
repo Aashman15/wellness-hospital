@@ -65,6 +65,7 @@ export default {
       },
       backgroundImage: {
         'nav-hero': "url('/src/assets/images/nav-hero-bg.png')",
+        appointment: "url('/src/assets/images/appointment-bg.png')",
       },
     },
   },

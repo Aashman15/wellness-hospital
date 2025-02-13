@@ -69,7 +69,7 @@ const LatestArticles = () => {
         <Button>See More Article</Button>
       </div>
       <div>
-        <div className="mt-12 flex gap-9">
+        <div className="mt-12 flex gap-9 xl:mt-0">
           {articles.map((a) => (
             <ArticleCard
               number={a.number}

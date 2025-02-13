@@ -72,6 +72,7 @@ const LatestArticles = () => {
         <div className="mt-12 flex gap-9 xl:mt-0">
           {articles.map((a) => (
             <ArticleCard
+              key={a.number}
               number={a.number}
               date={a.date}
               title={a.title}

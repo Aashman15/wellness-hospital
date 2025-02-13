@@ -7,6 +7,7 @@ import Doctors from './Doctors';
 import Immediate from './Immediate';
 import Pricing from './Pricing';
 import Appointment from './Appointment';
+import LatestArticles from './LatestArticles';
 
 const OtherSections = () => {
   return (
@@ -19,6 +20,7 @@ const OtherSections = () => {
       <Immediate />
       <Pricing />
       <Appointment />
+      <LatestArticles />
     </>
   );
 };

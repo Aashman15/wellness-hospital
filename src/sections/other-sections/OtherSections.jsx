@@ -9,6 +9,7 @@ import Pricing from './Pricing';
 import Appointment from './Appointment';
 import LatestArticles from './LatestArticles';
 import Testinomial from './Testinomial';
+import Footer from './Footer';
 
 const OtherSections = () => {
   return (
@@ -23,6 +24,7 @@ const OtherSections = () => {
       <Appointment />
       <LatestArticles />
       <Testinomial />
+      <Footer />
     </>
   );
 };
